@@ -13,7 +13,7 @@ export default function HomePage() {
             <span className="eyebrow">Phoenix-area heating &amp; cooling</span>
             <h1>Stay cool when the <span>desert heats up.</span></h1>
             <p className="lead">
-              Straightforward AC service for Phoenix-area homeowners—from urgent repairs to planned replacements and seasonal tune-ups.
+              Straightforward AC service for Phoenix-area homeowners. <br /> From urgent repairs to planned replacements.
             </p>
             <ul className="hero-points">
               <li>Local service</li>
