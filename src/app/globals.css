@@ -419,13 +419,16 @@ p { margin: 0 0 22px; color: var(--ink-soft); }
     background-image:
       linear-gradient(90deg, rgba(2,7,12,.94) 0%, rgba(2,7,12,.78) 55%, rgba(2,7,12,.18) 100%),
       url("/hoxair-logo.png");
-    background-position: center, -24px center;
+    background-position: center, -50px center;
     background-repeat: no-repeat;
     background-size: cover, auto 92%;
   }
   .hero, .hero-grid { min-height: auto; }
   .hero-grid { padding: 64px 0; }
+  .hero-copy { display: flex; flex-direction: column; }
   .hero .lead { display: none; }
+  .hero .button-row { order: 3; }
+  .hero-points { order: 4; margin: 24px 0 0; }
   .hero::before { width: 320px; height: 320px; opacity: .38; }
   .hero::after { opacity: .35; }
   .section-heading, .callout-inner { align-items: flex-start; flex-direction: column; }
