@@ -161,7 +161,6 @@ p { margin: 0 0 22px; color: var(--ink-soft); }
   padding: 70px 0;
 }
 .hero-copy { max-width: 680px; }
-.hero-mobile-logo { display: none; }
 .hero h1 { color: white; text-shadow: 0 3px 28px rgba(0,0,0,.35); }
 .hero h1 span { color: #ff963d; }
 .hero .lead { color: #c8d5e4; }
@@ -171,12 +170,6 @@ p { margin: 0 0 22px; color: var(--ink-soft); }
 .hero-points { display: flex; flex-wrap: wrap; gap: 10px 22px; margin: 28px 0; padding: 0; list-style: none; }
 .hero-points li { color: #edf5ff; font-weight: 700; }
 .hero-points li::before { content: "✓"; margin-right: 8px; color: #ff963d; }
-.trust-band { border-bottom: 1px solid var(--line); background: white; }
-.trust-row { display: grid; width: min(900px, calc(100% - 40px)); grid-template-columns: repeat(3, 1fr); gap: 0; }
-.trust-item { padding: 20px 18px; text-align: center; }
-.trust-item + .trust-item { border-left: 1px solid var(--line); }
-.trust-item strong { display: block; color: var(--navy); font-size: 1.05rem; }
-.trust-item span { color: var(--ink-soft); font-size: .85rem; }
 
 .section-heading { display: flex; align-items: end; justify-content: space-between; gap: 40px; margin-bottom: 42px; }
 .section-heading h2, .section-heading p { margin-bottom: 0; }
@@ -423,28 +416,18 @@ p { margin: 0 0 22px; color: var(--ink-soft); }
   .section { padding: 68px 0; }
   .hero {
     background-color: #050a10;
-    background-image: linear-gradient(135deg, #050a10, #0b1825);
-    background-position: center;
-    background-size: cover;
+    background-image:
+      linear-gradient(90deg, rgba(2,7,12,.94) 0%, rgba(2,7,12,.78) 55%, rgba(2,7,12,.18) 100%),
+      url("/hoxair-logo.png");
+    background-position: center, 55px center;
+    background-repeat: no-repeat;
+    background-size: cover, auto 92%;
   }
   .hero, .hero-grid { min-height: auto; }
-  .hero-grid { gap: 0; padding: 56px 0 0; }
-  .hero-mobile-logo {
-    display: block;
-    width: 100%;
-    margin-top: 40px;
-    aspect-ratio: 1024 / 704;
-    border: 1px solid rgba(255,255,255,.12);
-    border-bottom: 0;
-    border-radius: 22px 22px 0 0;
-    background: url("/hoxair-logo.png") center / cover no-repeat;
-    box-shadow: 0 -16px 45px rgba(0,0,0,.24);
-  }
+  .hero-grid { padding: 64px 0; }
+  .hero .lead { display: none; }
   .hero::before { width: 320px; height: 320px; opacity: .38; }
   .hero::after { opacity: .35; }
-  .trust-row { grid-template-columns: 1fr; padding: 12px 0; }
-  .trust-item { padding: 13px 20px; }
-  .trust-item + .trust-item { border: 0; }
   .section-heading, .callout-inner { align-items: flex-start; flex-direction: column; }
   .card-grid, .two-card-grid, .split, .content-grid, .contact-layout { grid-template-columns: 1fr; }
   .service-tile { min-height: 300px; grid-column: 1 / -1; }
@@ -460,6 +443,15 @@ p { margin: 0 0 22px; color: var(--ink-soft); }
   .service-row-marker small { margin-top: 0; }
   .service-row-arrow { width: 42px; height: 42px; }
   .feature-art { min-height: 360px; order: -1; }
+  .feature-badge {
+    right: 12px;
+    bottom: 12px;
+    max-width: 190px;
+    padding: 14px 16px;
+    border-radius: 13px;
+  }
+  .feature-badge strong { font-size: 1rem; }
+  .feature-badge span { font-size: .78rem; line-height: 1.35; }
   .areas-grid { grid-template-columns: repeat(2, 1fr); }
   .sidebar-card { position: static; }
   .footer-grid { grid-template-columns: 1fr 1fr; }

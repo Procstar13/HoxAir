@@ -25,17 +25,8 @@ export default function HomePage() {
               <Link className="button button-outline" href="/contact">Request service</Link>
             </div>
           </div>
-          <div className="hero-mobile-logo" aria-hidden="true" />
         </div>
       </section>
-
-      <div className="trust-band">
-        <div className="shell trust-row" aria-label="Service highlights">
-          <div className="trust-item"><strong>Phoenix-area service</strong><span>Across the Valley</span></div>
-          <div className="trust-item"><strong>Cooling focused</strong><span>Built for Arizona homes</span></div>
-          <div className="trust-item"><strong>Easy to reach</strong><span>Call or request service online</span></div>
-        </div>
-      </div>
 
       <section className="section">
         <div className="shell">
