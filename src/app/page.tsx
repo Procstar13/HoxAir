@@ -25,6 +25,7 @@ export default function HomePage() {
               <Link className="button button-outline" href="/contact">Request service</Link>
             </div>
           </div>
+          <div className="hero-mobile-logo" aria-hidden="true" />
         </div>
       </section>
 
